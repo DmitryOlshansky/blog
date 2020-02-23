@@ -1,0 +1,10 @@
+.body {
+    min-height: 100%;
+}
+.container {
+    display: block;
+    min-height: 100%;
+    width: 1000px;
+    margin: auto;
+}
+

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+is_index_page: True
+---
+
+<main id="content" class="content" role="main">
+    {% for post in site.posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title">
+                <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}"> {{ post.date | date_to_string }}</time>
+                {{ post.title }}
+            </h2>
+            <div class="post-categories">
+                {% for cat in post.categories %} 
+                    <div style="display:inline-block">{{ cat }} </div>
+                {% endfor %}
+            </div>
+        </header>
+        <section class="post-excerpt">
+            {{ post.excerpt }}
+            <a class="read-more" href="{{ post.url }}">» Read more...</a>
+        </section>
+    </article>
+    {% endfor %}
+
+</main>
