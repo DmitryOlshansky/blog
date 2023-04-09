@@ -1,6 +1,6 @@
 ---
-layout: default
-title: About me 
+title: "About me"
+layout: "about"
 ---
 
 I'm a computer science researcher with broad spectrum of interests. Over time my focus changed from Robotics to AI to Compilers and Runtimes. 
