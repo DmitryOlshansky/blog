@@ -2,6 +2,10 @@
     min-height: 100%;
 }
 
+.backref{
+    color: #fff;
+}
+
 .container {
     display: block;
     min-height: 100%;
@@ -9,7 +13,7 @@
     margin: auto;
 }
 
-.motto {
+.top-title {
     color: #fff;
     border: 2px;
     background: #9abccf;
@@ -20,6 +24,12 @@
     color: #fff;
     background: #9abccf;
     padding: 20px;
+}
+
+.copyright {
+    color:#fff;
+    padding: 20px;
+    background: #9abccf;
 }
 
 .button:hover {
