@@ -1,6 +1,7 @@
 .body {
     min-height: 100%;
 }
+
 .container {
     display: block;
     min-height: 100%;
@@ -8,3 +9,24 @@
     margin: auto;
 }
 
+.motto {
+    color: #fff;
+    border: 2px;
+    background: #9abccf;
+    padding: 30px;
+}
+
+.button {
+    color: #fff;
+    background: #9abccf;
+    padding: 20px;
+}
+
+.button:hover {
+    color: #fff;
+    background: #284a69;
+}
+
+.page-title {
+    color: #205080
+}

@@ -1,13 +1,13 @@
 {% include header.html %}
     <header class="main-header">
-        <h1>{{ site.description }}</h1>
+        <h1 class="motto" >{{ site.description }}</h1>
         <nav class="main-nav">
             {% if page.is_index_page %}
-                <a href='{{ site.baseurl }}about.html'> About me </a>
+                <a class="button" href='{{ site.baseurl }}about.html'> About me </a>
             {% else %}
-                <a href='{{ site.baseurl }}'> Home </a>
+                <a class="button" href='{{ site.baseurl }}'> Home </a>
             {% endif %}
-            <a class="subscribe-button" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+            <a class="button" href="{{ site.baseurl }}feed.xml">Subscribe</a>
         </nav>
     </header>
     {{ content }}
