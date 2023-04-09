@@ -1,4 +1,4 @@
 baseURL = 'https://olshansky.me/'
 languageCode = 'en-us'
 title = 'Holistic scientist'
-theme = 'ananke'
+theme = 'hugo-vitae'
