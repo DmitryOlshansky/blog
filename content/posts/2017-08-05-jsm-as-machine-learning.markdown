@@ -29,7 +29,7 @@ Classification of tau examples is done by intersecting with hypotheses, each ful
 Up to this point the problem space was fairly limited - only binary attributes and a single binary property. First an obvious extension is considering P independent properties at once. One can go about it by performing 2P separate inductions - each property times plus and minus. More interestingly it can be done in exactly one induction by encoding properties as a pair of attributes - one for minus and one for plus. Then a single pass of induction is performed discarding concepts whose parents properties have zero in intersection. Going to tau examples (which can be partially tau) during classification they count as two ones to allow simpler processing.
 
 Getting more ambitious and speaking of non-binary attributes, a typical enumeration can be encoded as binary number. For continuous intervals there are more clever encodings. I will cover one particular encoding - "activity level", which is a number in (0, 1.0) range where having large value implies greater activity. The key observation is that activity of 0.5 implies having more then 0.25, therefore an intersection of activities is the minimum of the two. Finally the binary encoding is done by separating the range in a fixed number of steps and denoting a binary attribute for each step. With such an arrangement binary intersection will magically obtain the required logical result. This trick works both for properties and attributes. Other clever encodings are a topic for a separate article.
-![Level encoding](/assets/images/LevelEncoding.jpg "Level encoding")
+![Level encoding](/images/LevelEncoding.jpg "Level encoding")
 
 ## Case study - Mushrooms
 

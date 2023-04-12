@@ -13,7 +13,7 @@ If we were to ignore some global paraphernalia the GC is basically an array of p
 
 Importantly pools come in two flavors: small object pool and large object pool. Small pools allocate objects up to 2kb in size, the rest is serviced by large pools. Small pools are actually more interesting so let's look at them first. 
 
-![Small pool structure](/assets/images/SmallPool.jpg "Small pool structure")
+![Small pool structure](/images/SmallPool.jpg "Small pool structure")
 Any small allocation is first rounded up to one of power of 2 size classes - 16, 32, 64, 128, 256, 512, 1024, 2048.  Then a global freelist for this size class is checked, failing that we go on to locate a small pool. That small pool would allocate a new page and link it up as a free list of objects of this size class. Here comes the first big mistake of the current design - size class is assigned on a page basis, therefore we need a table that maps each page of a pool to a size class (confusingly called pagetable). Now to find the start of an object by internal pointer we first locate the page it belongs to, then lookup the size class, and finally do a bitmask to get to the start of object. More over metadata is a bunch of simple bit-tables that now has to cope with heterogeneous pages, it does so by having ~7 bits per 16 bytes regardless of the object size.
 
 What motivated that particular design? I have 2 hypotheses. First is being afraid to reserve memory for underutilized pools, which is a non-issue due to virtual memory with lazy commit. Second is being afraid of having too many pools, slowing down allocation and interestingly marking. The last one is more likely the reason, as indeed GC does a linear scan over pools quite often and a binary search for every potential pointer(!) during the marking phase.
@@ -22,7 +22,7 @@ That brings us to the second mistake - pool search in logP where P is a number o
 
 Concluding our overview of small pool, we should also look at the selection of size classes. This is a third issue (not a mistake, but controversial choice) having power of 2 sizes guarantees us up to 50% of [internal fragmentation](https://en.m.wikipedia.org/wiki/Fragmentation_(computing)#Internal_fragmentation).  Modern allocators such as [jemalloc](https://m.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919/)  typically provide for one more size class in between powers of 2. Modulo by a constant that is not a power of 2 is a bit slower than a single bit AND but still quite affordable. 
 
-![Large pool structure](/assets/images/LargePool.jpg "Large pool structure")
+![Large pool structure](/images/LargePool.jpg "Large pool structure")
 
 Let's have a look at large object pools. First thing to note is that its granularity is a memory page (4kb) for both metadata and allocations. Free runs of pages are linked in one free list which is linearly scanned for every allocation request. This is the 4th mistake, that is not bothering with performance of large object allocation at all. To locate a start of an object a separate table is maintained where for every page an index of the start of the object it belongs to is stored. The scheme is sensible until one considers big allocations of 100+ Mb, as it will likely fail to reallocate in place causing a new pool to be allocated and would waste huge amounts of memory on metadata for essentially one object.
 
