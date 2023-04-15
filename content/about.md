@@ -27,6 +27,7 @@ Working at the next-gen of banking in Russia - [Tinkoff](https://www.tinkoff.ru)
 
 [GitHub](https://github.com/DmitryOlshansky)
 [LinkedIn](https://ru.linkedin.com/in/olshanskyd)
+[Medium](https://medium.com/@dmitry-olsh/brain-the-missing-manual-254ba32e0e0e)
 
 ## Talks and publications
 ### D language
