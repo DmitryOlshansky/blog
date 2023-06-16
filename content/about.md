@@ -23,6 +23,13 @@ Contributing to the D programming language - authored 2 modules of standard libr
 
 Working at the next-gen of banking in Russia - [Tinkoff](https://www.tinkoff.ru).
 
+ElasticSearch consulting - mainly scaling and common misconfigurations.
+
+## Sponsor my work
+
+[Sponsr.ru](https://sponsr.ru/glow)
+
+
 ## Links
 
 [GitHub](https://github.com/DmitryOlshansky)
