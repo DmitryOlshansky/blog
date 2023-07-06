@@ -36,8 +36,8 @@ Working at the next-gen of banking in Russia - [Tinkoff](https://www.tinkoff.ru)
 [GitHub](https://github.com/DmitryOlshansky)
 [LinkedIn](https://ru.linkedin.com/in/olshanskyd)
 [Medium](https://dmitry-olsh.medium.com/)
-[Email](dmitry@olshansky.me)
-[Phone](+79629447198)
+[Email](mailto:dmitry@olshansky.me)
+[Phone](tel:+79629447198)
 
 ## Talks and publications
 ### D language
