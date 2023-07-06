@@ -17,24 +17,25 @@ I'm a computer science researcher with broad spectrum of interests. Over time my
 
 ## Things I do
 
+ElasticSearch consulting - mainly scaling and common misconfigurations.
+
 Constantly approaching the defense of my PhD thesis on an obscure machine learning technique "JSM method" in application to chemestry.
 
 Contributing to the D programming language - authored 2 modules of standard library, also did tools and other small additions.
 
 Working at the next-gen of banking in Russia - [Tinkoff](https://www.tinkoff.ru).
 
-ElasticSearch consulting - mainly scaling and common misconfigurations.
-
 ## Sponsor my work
 
 [Sponsr.ru](https://sponsr.ru/glow)
-
+[Boosty](https://boosty.to/glowlabs)
+[Patreon](https://www.patreon.com/dmitry_glow_labs)
 
 ## Links
 
 [GitHub](https://github.com/DmitryOlshansky)
 [LinkedIn](https://ru.linkedin.com/in/olshanskyd)
-[Medium](https://medium.com/@dmitry-olsh/brain-the-missing-manual-254ba32e0e0e)
+[Medium](https://dmitry-olsh.medium.com/)
 
 ## Talks and publications
 ### D language
