@@ -31,6 +31,11 @@ Working at the next-gen of banking in Russia - [Tinkoff](https://www.tinkoff.ru)
 [Boosty](https://boosty.to/glowlabs)
 [Patreon](https://www.patreon.com/dmitry_glow_labs)
 
+Bitcoin bc1qglakf5xtl7x74fxuy3rfe6l5rh4ehhk5wvu9ec
+
+Etherium 0xE0f19292d5b24C5adBd4342ea542435b2f5c82c8
+
+
 ## Links
 
 [GitHub](https://github.com/DmitryOlshansky)
