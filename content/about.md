@@ -3,7 +3,7 @@ title: "About me"
 layout: "about"
 ---
 
-I'm a computer science researcher with broad spectrum of interests. Over time my focus changed from Robotics to AI to Compilers and Runtimes. 
+My name is Dmitry Olshansky and I'm a computer science researcher with broad spectrum of interests. Over time my focus changed from Robotics to AI to Compilers and Runtimes to Distributed Systems. 
 
 ## Philosophy
 
@@ -17,6 +17,8 @@ I'm a computer science researcher with broad spectrum of interests. Over time my
 
 ## Things I do
 
+CEO of [Glow labs](https://glow-labs.pro), a D language specific IT consultancy.
+
 ElasticSearch consulting - mainly scaling and common misconfigurations.
 
 Constantly approaching the defense of my PhD thesis on an obscure machine learning technique "JSM method" in application to chemestry.
@@ -25,19 +27,15 @@ Contributing to the D programming language - authored 2 modules of standard libr
 
 Working at the next-gen of banking in Russia - [Tinkoff](https://www.tinkoff.ru).
 
-## Sponsor my work
-
-[Sponsr.ru](https://sponsr.ru/glow)
-[Boosty](https://boosty.to/glowlabs)
-[Patreon](https://www.patreon.com/dmitry_glow_labs)
 
 ## Links
 
+[Sponsr.ru](https://sponsr.ru/glow)
 [GitHub](https://github.com/DmitryOlshansky)
 [LinkedIn](https://ru.linkedin.com/in/olshanskyd)
 [Medium](https://dmitry-olsh.medium.com/)
 [Email](mailto:dmitry@olshansky.me)
-[Phone](tel:+79629447198)
+[Phone](tel:+79936114343)
 
 ## Talks and publications
 ### D language
